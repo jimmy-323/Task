@@ -1,0 +1,33 @@
+import java.util.Random;
+import java.util.Scanner;
+
+public class GuessGame {
+
+	public static void main(String[] args) {
+	
+		Random rad=new Random();
+		int num= rad.nextInt(100);
+		System.out.print("Enter the Number!!!");
+		Scanner scan =new Scanner(System.in); 
+		int i_num=scan.nextInt();
+		
+		if(i_num<num)
+		{
+			System.out.print("Number is too Low");
+		}
+		else if(i_num>num)
+		{
+			System.out.print("Number is too High");
+		}
+		else if(i_num==num)
+		{
+			System.out.print("Correct Number Congrats!!!");
+		}
+		else
+		{
+			System.out.print("Invalid Input!!!");
+		}
+
+	}
+
+}
