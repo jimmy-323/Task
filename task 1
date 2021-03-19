@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class rollCall {
+
+	public static void main(String[] args) {
+		
+		System.out.print("Enter Your Last Name!!!");
+		Scanner scan=new Scanner(System.in);
+		String lname=scan.next();
+		String Wtime="";
+		
+		if("Carswell".compareToIgnoreCase(lname)>=0)
+		{
+			Wtime="you don't have to wait long";
+		}
+		else if("Jones".compareToIgnoreCase(lname)>=0)
+		{
+			Wtime="thats not bad";
+		}
+		else if("Smith".compareToIgnoreCase(lname)>=0)
+		{
+			Wtime="looks like a bit of a wait";
+		}
+		else if("Young".compareToIgnoreCase(lname)>=0)
+		{
+			Wtime="it's gonna be a while ";
+		}
+		else
+		{
+			Wtime="not going anywhere for while?";
+		}
+		
+        System.out.println(Wtime);
+	}
+
+}
